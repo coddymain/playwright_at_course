@@ -1,0 +1,14 @@
+# Окружение
+venv/
+.env
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+
+# Отчеты и результаты тестов (появятся позже)
+test-results/
+playwright-report/
+blob-report/
+playwright-log.txt
+.pytest_cache/
