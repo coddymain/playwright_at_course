@@ -16,3 +16,9 @@ def test_successful_login(page: Page):
     # 4. ПРОФЕССИОНАЛЬНЫЙ ШАГ: Проверка (Assertion)
     # Мы ожидаем, что на странице появится текст об успешном входе
     expect(page.get_by_text("You logged into a secure area!")).to_be_visible()
+
+    # Нажимаем на кнопку выхода, которую мы только что обсудили
+    page.get_by_role("link", name="Logout").click()
+    # Проверяем, что снова видим заголовок страницы входа
+    expect(page.get_by_role("heading", name="Login Page")).to_be_visible()
+    
