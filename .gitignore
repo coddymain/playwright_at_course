@@ -12,4 +12,3 @@ playwright-report/
 blob-report/
 playwright-log.txt
 .pytest_cache/
-Finish.txt/
