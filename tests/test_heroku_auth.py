@@ -38,4 +38,13 @@ def test_failed_login(page: Page):
     error_message = page.locator("#flash")
     expect(error_message).to_contain_text("Your username is invalid!")
         
-        
+def test_empty_fields_login(page: Page):
+    # 1. Переходим на страницу
+    page.goto("https://the-internet.herokuapp.com/login")
+
+    # 2. Оставляем поля пустыми и нажимаем кнопку Login
+    page.get_by_role("button", name=" Login").click()
+    
+    # 3. Проверяем, что отображается сообщение об ошибке для пустых полей
+    error_message = page.locator("#flash")
+    expect(error_message).to_contain_text("Your username is invalid!") 
