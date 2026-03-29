@@ -12,3 +12,7 @@ playwright-report/
 blob-report/
 playwright-log.txt
 .pytest_cache/
+
+# Результаты тестов Allure
+allure-results/
+allure-report/

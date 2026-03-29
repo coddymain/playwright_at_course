@@ -22,3 +22,24 @@ jobs:
       run: playwright install --with-deps
     - name: Run Pytest tests
       run: pytest
+      
+    - name: Get Allure history
+      uses: actions/checkout@v4
+      if: always()
+      with:
+        ref: gh-pages
+        path: gh-pages
+
+    - name: Allure Report action from marketplace
+      uses: simple-elf/allure-report-action@master
+      if: always()
+      with:
+        allure_results: allure-results
+        allure_history: allure-history
+
+    - name: Deploy report to Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: allure-history
