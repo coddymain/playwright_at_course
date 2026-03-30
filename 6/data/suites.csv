@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","446","test_successful_login[chromium]","tests","Mon Mar 30 19:26:21 UTC 2026","passed","Mon Mar 30 19:26:21 UTC 2026","","test_heroku_auth","",""
+"","311","test_login_with_pom_fixture[chromium]","tests","Mon Mar 30 19:26:22 UTC 2026","passed","Mon Mar 30 19:26:22 UTC 2026","","test_pom_login","",""
+"","114","test_get_user[chromium]","tests","Mon Mar 30 19:26:21 UTC 2026","passed","Mon Mar 30 19:26:21 UTC 2026","","test_api","",""
+"","352","test_failed_login[chromium]","tests","Mon Mar 30 19:26:21 UTC 2026","passed","Mon Mar 30 19:26:22 UTC 2026","","test_heroku_auth","",""
+"","301","test_empty_fields_login[chromium]","tests","Mon Mar 30 19:26:22 UTC 2026","passed","Mon Mar 30 19:26:22 UTC 2026","","test_heroku_auth","",""
